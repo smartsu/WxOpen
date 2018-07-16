@@ -1,0 +1,49 @@
+<!--pages/person/person.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <!--banner-->
+  <view class="person-info-box">
+    <view class="person-info">
+      <view class="person-image">
+        <image  mode="aspectFill" src="{{userInfo.avatarUrl}}"></image>
+      </view>
+
+      <view class="text-info">
+        <view class="person-name">
+        {{userInfo.nickName}}
+        </view>
+        <view class="person-level">
+          <text wx:for="{{personInfo.level}}">★</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <view>
+      <view class="order-manage-title">
+        <text>订单管理</text>
+      </view>
+      <view class="order-manage">
+        <view class="order-state" wx:for="{{orderType}}" wx:for-item="item">
+            <image mode="scaleToFill" src="{{item.src}}"></image>
+            <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="address-manage">
+    <image src="/images/location.png"></image>
+    <text>收货地址</text>
+    <image src="/images/arrowright.png"></image>
+  </view>
+
+  <view class="address-manage">
+    <image src="/images/message.png"></image>
+    <text>意见反馈</text>
+    <image src="/images/arrowright.png"></image>
+  </view>
+
+</view>
+

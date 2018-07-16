@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <!--banner-->
+  <view>
+    <image class="banner-style" mode="aspectFill" src="{{banner.src}}"></image>
+  </view>
+  <!-- <view class="divider"></view> -->
+  <view class="scroll-group">
+    <scroll-view class="sales-type">
+      <view class="all-type" wx:for="{{allType}}" wx:for-item="item">
+        <view class="all-type-title">
+           {{item.text}}
+        </view>
+      </view>
+    </scroll-view>
+    <scroll-view scroll-y="true" class="sales-product">
+      <view class="all-product" wx:for="{{allProduct}}" wx:for-item="item">
+        <view class="all-product-image">
+          <image mode="scaleToFill" src="{{item.src}}" >
+          </image>
+        </view>
+        <view class="product-title-group">
+          <view class="all-product-name">
+            <text>{{item.name}}</text>
+          </view>
+          <view class="all-product-price">
+            <text>{{item.price}}</text>
+          </view>
+        </view>
+        <view class="product-num">
+          <view>
+          -
+          </view>
+          <view>
+          2
+          </view>
+          <view>
+          +
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  
+</view>
+

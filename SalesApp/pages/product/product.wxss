@@ -1,0 +1,48 @@
+/* pages/product/product.wxss */
+.container{
+  height:100%;
+  background-color: #EEE;
+}
+
+.banner-style{
+  height:360rpx;
+  margin-bottom: 10rpx;
+}
+
+.product-info{
+  width:calc(100% - 40rpx);
+  margin-top:2rpx;
+  background-color: #FFF;
+  padding:20rpx 20rpx;
+  color:#555;
+}
+
+.name{
+  color:#F00;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.price{
+  color:#F00;
+  font-weight: bold;
+}
+
+.specifications{
+  font-size: 30rpx;
+}
+
+.specifications view{
+  margin-bottom: 10rpx;
+  color:#222;
+  font-weight: bold;
+}
+
+.describe{
+  font-size: 30rpx;
+}
+
+.describe view{
+  margin-bottom: 10rpx;
+  color:#222;
+  font-weight: bold;
+}

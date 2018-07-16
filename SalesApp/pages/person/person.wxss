@@ -1,0 +1,109 @@
+/* pages/person/person.wxss */
+.container{
+  background-color: #EEE;
+}
+.person-info-box{
+  padding:0 60rpx;
+}
+
+.person-info{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; 
+  background-color: #FFF;
+}
+
+.person-image{
+  margin:20rpx;
+  flex-basis:30%;
+  height:160rpx;
+}
+
+.person-image image{
+  border:solid 6rpx #AC3;
+  border-radius: 50%;
+  width:160rpx;
+  margin:auto 0;
+  }
+
+.text-info{
+  margin-top:80rpx;
+  flex-basis:65%;
+
+}
+
+.person-name{
+  font-size: 32rpx;
+  color:#555;
+}
+
+.person-level{
+  margin-top:20rpx;
+  color:#8E3;
+}
+
+.order-manage-title{
+  margin-top:20rpx;
+  padding:12rpx 20rpx;
+  background-color: #FFF;
+  font-size: 32rpx;
+  color:#555;
+}
+.order-manage{
+  margin-top:2rpx;
+  margin-bottom:40rpx;
+  display: flex;
+  padding:10rpx 0;
+  flex-flow: row nowrap;
+  justify-content: space-between; 
+  background-color: #FFF;
+}
+
+.order-state{
+  flex-basis: 20%;
+  font-size: 26rpx;
+  color:#555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .order-state view{
+  justify-content: center;
+} */
+
+.order-state image{
+  width:70rpx;
+  height:70rpx;
+  margin:0 auto;
+}
+
+.order-state text{
+  text-align: center;
+}
+
+.address-manage{
+  margin-top:4rpx;
+  padding:20rpx 20rpx;
+  background-color: #FFF;
+  font-size: 32rpx;
+  color:#555;
+}
+
+.address-manage image{
+  width:46rpx;
+  height:46rpx;
+  margin: 0 20rpx;
+}
+
+.address-manage text{
+  display:inline-block;
+  height:46rpx;
+  line-height: 46rpx;
+  margin: 0 20rpx;
+  font-size: 32rpx;
+}
+
+.address-manage :last-child{
+  float:right;
+}

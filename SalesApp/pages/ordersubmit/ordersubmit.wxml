@@ -1,0 +1,61 @@
+<!--pages/ordersubmit/ordersubmit.wxml-->
+<view class="container">
+  <!--banner-->
+  <view class="receive-info">
+    <view class="title">
+      <text>收货人信息：</text>
+    </view>
+    <view class="base-info">
+      <text> 刘德</text> <text>136 8035 5047</text>
+    </view>
+
+    <!--分割线-->
+    <view class="divider"></view>
+
+    <view>
+      <view class="title">选择地址：</view>
+      <picker value="{{index}}" range="{{address}}">
+        <view class="picker">
+          {{address[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="receive-info">
+    <view class="base-info">
+      <text>商品金额</text> <text class="import">￥3041</text>
+    </view>
+    
+    <!--分割线-->
+    <view class="divider"></view>
+
+    <view class="base-info">
+      <text>运费</text> <text class="import">￥41</text>
+    </view>
+
+    <!--分割线-->
+    <view class="divider"></view>
+
+    <view class="base-info">
+      <text>折扣优惠</text> <text class="import">￥121</text>
+    </view>
+
+  </view>
+ 
+  <view class="receive-info">
+    <view class="base-info">
+      <text>预计送达时间</text> <text class="import">2018-10-14</text>
+    </view>
+  </view>
+
+  <view class="sure-submit">
+    <view>
+      <text class="import">实付款：￥1600.00</text>
+    </view>
+    <view class="submit">
+      支付
+    </view>
+  </view>
+</view>
+

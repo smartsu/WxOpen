@@ -1,0 +1,84 @@
+/**index.wxss**/
+.banner-style{
+   height: 300rpx;
+   width:100%;
+}
+.hot-type-group{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+}
+.hot-type{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  margin:10rpx 0 10rpx 0;
+}
+
+.hot-type-image{
+  margin:auto;
+  border-radius: 50%;
+  width:100rpx;
+  max-height: 100rpx;
+  height: 100rpx;
+}
+
+.hot-type-image image{
+  border-radius: 50%;
+}
+
+.hot-type-title{
+  margin:auto;
+  text-align: center;
+  color:#888;
+  font-size: 32rpx;
+}
+
+.hot-sales-title{
+  text-align: center;
+  color:#89B;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.hot-sales{
+  color:#89B;
+  font-weight: bold;
+  width:50%;
+  margin:8rpx 0;
+}
+
+.hot-sales-image{
+  align-content: center;
+  height:160rpx;
+  width:96%;
+  margin:0 10rpx;
+}
+
+.title-group{
+  display: flex;
+  flex-flow: row;
+}
+
+.hot-sales-name {
+  margin:6rpx 26rpx;
+  text-align: left;
+  color:#888;
+  font-size: 32rpx;
+  width:50%;
+  font-weight: normal;
+}
+
+.hot-sales-price{
+  margin:6rpx 26rpx;
+  text-align: right;
+  color:#888;
+  font-size: 32rpx;
+  font-weight: normal;
+}
+
+.hot-sales-price text ::before{
+  content: "￥";
+  display: inline-block;
+}

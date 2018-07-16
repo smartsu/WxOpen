@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+  <!--banner-->
+  <view>
+    <image class="banner-style" mode="aspectFill" src="{{banner.src}}"></image>
+  </view>
+
+  <!--热门分类-->
+  <view class="hot-type-group">
+    <view class="hot-type" wx:for="{{hotType}}" wx:for-item="item">
+        <view class="hot-type-image">
+          <image mode="scaleToFill" src="{{item.src}}" >
+          </image>
+        </view>
+        <view class="hot-type-title">
+           {{item.text}}
+        </view>
+    </view>
+  </view>
+
+  <!--分割线-->
+  <view class="divider"></view>
+  <!--活动专区-->
+  <view>
+    <view class="hot-sales-title">—— {{zoneTitle}} ——</view>
+    <view class="hot-type-group">
+      <view class="hot-sales" wx:for="{{hotProduct}}" wx:for-item="item">
+        <view class="hot-sales-image">
+          <image mode="scaleToFill" src="{{item.src}}"></image>
+        </view>
+        <view class='title-group'>
+          <view class="hot-sales-name">
+            <text>{{item.name}}</text>
+          </view>
+          <view class="hot-sales-price">
+            <text>{{item.price}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

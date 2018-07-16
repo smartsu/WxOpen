@@ -1,0 +1,27 @@
+<!--pages/product/product.wxml-->
+
+<!--index.wxml-->
+<view class="container">
+  <!--banner-->
+  <view>
+    <image class="banner-style" mode="aspectFill" src="{{product.src}}"></image>
+  </view>
+
+  <view class="product-info name">
+    {{product.name}}
+  </view>
+
+  <view class="product-info price">
+    {{product.price}}
+  </view>
+
+  <view class="product-info specifications">
+    <view>规格:</view>
+    {{product.specifications}}
+  </view>
+
+  <view class="product-info describe">
+    <view>描述:</view>
+    {{product.describe}}
+  </view>
+</view>

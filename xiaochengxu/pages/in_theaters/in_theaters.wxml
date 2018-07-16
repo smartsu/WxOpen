@@ -1,0 +1,14 @@
+<view class="warp-list">
+    <block wx:for="{{filmlist}}">
+        <view bindtap="viewDetail" id="{{item.category_id}}" class="warp-item">
+            <image src="{{item.list_pic_url}}"></image>
+            <view class="word">
+                <view class="word-title">{{item.name}}</view>
+                <view class="word-rating">
+                    <view wx:if="{{item.is_hot == 0}}">暂无评分</view>
+                    <view wx:else>{{item.is_hot}}</view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

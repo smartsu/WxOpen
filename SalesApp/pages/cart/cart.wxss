@@ -1,0 +1,174 @@
+/* pages/cart/cart.wxss */
+.container{
+  background-color: #EEE;
+  height:100%;
+}
+
+.cart-list{
+  height: calc(100% - 120rpx);
+}
+
+
+.sales-product{
+  width:84%;
+  height:800rpx;
+  background-color: #EEE;
+}
+
+.all-product{
+  display: flex;
+  flex-flow: row;
+  height:140rpx;
+  padding: 10rpx 10rpx;
+  margin-bottom: 4rpx;
+  background-color: #FFF;
+  align-items:Center;
+}
+
+.all-product-select{
+  width:60rpx;
+}
+
+.all-product-image{
+  width:25%;
+  height:140rpx;
+}
+
+.product-title-group{
+  padding-left: 16rpx;
+  width:50%;
+}
+
+.all-product-name{
+  font-size: 32rpx;
+  font-weight: bold;
+  
+}
+
+.all-product-price{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color:#F00;
+}
+
+.all-product-price :first-child ::before{
+  content:"￥";
+}
+
+.product-num{
+  display: flex;
+  flex-flow: row;
+  width:25%;
+  text-align: center;
+  color:#555;
+  /* vertical-align: bottom;  */
+  padding:80rpx 16rpx 0 0;
+
+}
+
+.product-num view{
+  width:60rpx;
+}
+
+.product-num :first-child{
+  display:inline-block;
+ width:36rpx;
+  height:36rpx;
+  border-radius: 50%;
+  line-height: 32rpx;
+  /* background: #F00; */
+  color:#F00;
+  font-weight: bold;
+  border:#F00 solid 2rpx;
+}
+
+.product-num :nth-child(2){
+  font-size: 28rpx;
+}
+
+.product-num :last-child{
+  display:inline-block;
+  width:40rpx;
+  height:40rpx;
+  border-radius: 50%;
+  line-height: 32rpx;
+  background: #F00;
+  color:#fff;
+  font-weight: bold;
+}
+
+.foot{
+  position: fixed;
+  display:flex;
+  flex-flow: row;
+  bottom: 0;
+  height:120rpx;
+  background-color: #B25;
+  border-top: solid 2rpx #CCC;
+  border-bottom: solid 2rpx #CCC;
+  color:#FFF;
+  align-items: center;
+}
+
+.foot view{ 
+  text-align: center;
+  height:100rpx;
+  display: flex;
+  justify-content:center;
+  align-items:Center;
+}
+
+.select-all{
+  flex-basis: 20%;
+  font-size: 28rpx;
+}
+
+.total-money{
+  flex-basis: 50%;
+  display:flex;
+  flex-flow: column;
+  border-left: 2rpx solid #FAA;
+  border-right: 2rpx solid #FAA;
+  font-size: 24rpx;
+  align-items: left;
+}
+
+.total-money view{
+  justify-content: left;
+  padding-left: 16rpx;
+}
+
+.total-money :first-child{
+  font-size: 36rpx;
+}
+
+.submit{
+  flex-basis: 30%;
+  font-weight: bold;
+}
+
+/* 未选中的 背景样式 */
+checkbox .wx-checkbox-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 背景的宽 */
+   height: 40rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background: red;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}

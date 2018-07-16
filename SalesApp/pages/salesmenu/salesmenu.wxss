@@ -1,0 +1,112 @@
+.banner-style{
+   height: 330rpx;
+   width:100%;
+   margin:0;
+}
+
+.scroll-group{
+  position: relative;
+  top:260rps;
+  display: flex;
+  flex-flow: row;
+  width:100%;
+  height:100%;
+  margin:0;
+}
+
+.sales-type{
+  width:16%;
+  height:800rpx;
+  background-color: #DDD;
+}
+
+.sales-product{
+  width:84%;
+  height:800rpx;
+  background-color: #EEE;
+}
+
+.all-type{
+  height:80rpx;
+  line-height: 80rpx;
+  padding-left: 16rpx;
+  color:#444;
+  font-size: 28rpx;
+}
+
+.all-product{
+  display: flex;
+  flex-flow: row;
+  height:140rpx;
+  padding: 10rpx 10rpx;
+  margin-bottom: 10rpx;
+  background-color: #FFF;
+}
+
+.all-product-image{
+  width:25%;
+  height:140rpx;
+}
+
+.product-title-group{
+  padding-left: 16rpx;
+  width:50%;
+}
+
+.all-product-name{
+  font-size: 32rpx;
+  font-weight: bold;
+  
+}
+
+.all-product-price{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color:#F00;
+}
+
+.all-product-price :first-child ::before{
+  content:"￥";
+}
+
+.product-num{
+  display: flex;
+  flex-flow: row;
+  width:25%;
+  text-align: center;
+  color:#555;
+  vertical-align: bottom; 
+  padding:80rpx 16rpx 0 0;
+}
+
+.product-num view{
+  width:60rpx;
+}
+
+.product-num :first-child{
+  display:inline-block;
+  width:36rpx;
+  height:36rpx;
+  border-radius: 50%;
+  line-height: 32rpx;
+  /* background: #F00; */
+  color:#F00;
+  font-weight: bold;
+  border:#F00 solid 2rpx;
+}
+
+.product-num :nth-child(2){
+  font-size: 28rpx;
+}
+
+.product-num :last-child{
+  display:inline-block;
+  width:40rpx;
+  height:40rpx;
+  border-radius: 50%;
+  line-height: 32rpx;
+  background: #F00;
+  color:#fff;
+  font-weight: bold;
+}

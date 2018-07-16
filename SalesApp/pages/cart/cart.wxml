@@ -1,0 +1,50 @@
+<!--pages/cart/cart.wxml-->
+<!--pages/person/person.wxml-->
+<!--index.wxml-->
+<view class="container">
+    <scroll-view class="cart-list" scroll-y="true">
+      <view class="all-product" wx:for="{{allProduct}}" wx:for-item="item">
+        <view class="all-product-select">
+          <checkbox value="select" checked="true"/>
+        </view>
+        <view class="all-product-image">
+          <image mode="scaleToFill" src="{{item.src}}" >
+          </image>
+        </view>
+        <view class="product-title-group">
+          <view class="all-product-name">
+            <text>{{item.name}}</text>
+          </view>
+          <view class="all-product-price">
+            <text>{{item.price}}</text>
+          </view>
+        </view>
+        <view class="product-num">
+          <view>
+          -
+          </view>
+          <view>
+          {{item.num}}
+          </view>
+          <view>
+          +
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+
+  <view class="foot">
+    <view class="select-all">
+      <checkbox value="all" checked="true"/>全选
+    </view>
+    <view class="total-money">
+      <view>合计: ￥13000.00</view>
+      <view>超过 ￥230，可免运费</view>
+    </view>
+    <view class="submit">
+      <text>购买</text>
+    </view>
+  </view>
+</view>
+
+

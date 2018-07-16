@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="table">
+        <view class="tr">
+            <view class="th">标题1</view>
+            <view class="th">标题2</view>
+            <view class="th">标题3</view>
+            <view class="th">标题4</view>
+            <view class="th">标题5</view>
+        </view>
+        <view class="tr" wx:for="{{filmlist}}">
+            <view class='td'> {{item.id}} </view>
+            <view class="td"> {{item.name}} </view>
+            <view class="td"> {{item.goods_brief}} </view>
+            <view class="td"> {{item.goods_unit}} </view>
+            <view class="td"> {{item.retail_price}} </view>
+        </view>
+    </view>
+</view>

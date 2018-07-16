@@ -1,0 +1,58 @@
+/* pages/ordersubmit/ordersubmit.wxss */
+.container{
+  background-color: #EEE;
+}
+
+.receive-info{
+  width:calc(100% - 40rpx);
+  background-color: #FFF;
+  padding: 26rpx;
+  font-size: 36rpx;
+  margin-bottom: 30rpx;
+}
+
+.base-info{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.divider{
+  height:3rpx;
+  margin:20rpx 0;
+}
+
+.title{
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.sure-submit{
+  position: fixed;
+  bottom:0;
+  display:flex;
+  flex-flow: row;
+  height:120rpx;
+  background-color: #FFF;
+  align-items: center;
+}
+
+.sure-submit :first-child{
+  padding-left: 20rpx;
+}
+
+.import{
+  font-weight: bold;
+  color:#F00;
+}
+
+.submit{
+  width:36%;
+  height:100%;
+  background-color: #F00;
+  text-align: center;
+  color:#FFF;
+  line-height: 120rpx;
+  font-weight: bold;
+}
